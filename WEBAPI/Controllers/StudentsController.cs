@@ -8,7 +8,7 @@ using WEBAPI.Models;
 
 namespace WEBAPI.Controllers
 {
-    [Route("/api/students")]
+    [RoutePrefix("api/students")]
     public class StudentsController : ApiController
     {
         static List<Student> students = new List<Student>()
@@ -17,6 +17,19 @@ namespace WEBAPI.Controllers
             new Student() {Id = 1, Name = "Lucho"},
             new Student() {Id = 1, Name = "Riki"},
         };
+        [Route("~/api/teachers")]
+        public IEnumerable<Teacher> GetTeachers()
+        {
+            List<Teacher> teachers = new List<Teacher>()
+            {
+                new Teacher(){ Id=1, Name = "Rob" },
+                new Teacher(){ Id=2, Name = "Robin" },
+                new Teacher(){ Id=3, Name = "Rick" }
+            };
+
+            return teachers;
+        }
+
         [Route("")]
         public IEnumerable<Student> Get()
         {
