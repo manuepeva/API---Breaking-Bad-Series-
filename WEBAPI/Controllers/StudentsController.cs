@@ -8,35 +8,35 @@ using WEBAPI.Models;
 
 namespace WEBAPI.Controllers
 {
+    [Route("/api/students")]
     public class StudentsController : ApiController
     {
         static List<Student> students = new List<Student>()
         {
-            new Student() {Id = 1, Name = "tome"},
-            new Student() {id = 2, Name= "dos"},
-            new Student() {id  3, Name  "tres"}
+            new Student() {Id = 1, Name = "Jose"},
+            new Student() {Id = 1, Name = "Lucho"},
+            new Student() {Id = 1, Name = "Riki"},
         };
-
-        public static List<Student> Students { get => students; set => students = value; }
-
+        [Route("")]
         public IEnumerable<Student> Get()
         {
-            return Students;
+            return students;
         }
-
+        [Route("{id}")]
         public Student Get(int id)
         {
-            return Students.FirstOrDefault(s => s.Id == id);
+            return students.FirstOrDefault(s => s.Id == id);
         }
 
+        [Route("{id}/courses")]
         public IEnumerable<string> GetStudentCourses(int id)
         {
             if (id == 1)
                 return new List<String>() { "C#", "ASP.NET", "SQL-Server" };
             else if (id == 2)
-                return new List<string>() { "Phyton", "Mangalore", "Oracle-Server" };
+                return new List<String>() { "Phyton", "Mangalore", "Oracle-Server" };
             else
-                return new List<string>() { "Anything", "bootstrap", "SQL-WorkBench };     
-        };
+                return new List<String>() { "Anything", "bootstrap", "SQL-WorkBench" };
+        }
     }
 }
