@@ -1,4 +1,3 @@
-D:\Bitcoin_Wallet\Various_AspNet_Projects\WEBAPI\WEBAPI\obj\Debug\WEBAPI.csprojResolveAssemblyReference.cache
 D:\Bitcoin_Wallet\Various_AspNet_Projects\WEBAPI\WEBAPI\obj\Debug\WEBAPI.csproj.CoreCompileInputs.cache
 D:\Bitcoin_Wallet\Various_AspNet_Projects\WEBAPI\WEBAPI\bin\ApplicationInsights.config
 D:\Bitcoin_Wallet\Various_AspNet_Projects\WEBAPI\WEBAPI\bin\roslyn\csc.exe
@@ -72,3 +71,4 @@ D:\Bitcoin_Wallet\Various_AspNet_Projects\WEBAPI\WEBAPI\bin\Microsoft.AI.Windows
 D:\Bitcoin_Wallet\Various_AspNet_Projects\WEBAPI\WEBAPI\bin\Microsoft.AI.Web.xml
 D:\Bitcoin_Wallet\Various_AspNet_Projects\WEBAPI\WEBAPI\obj\Debug\WEBAPI.dll
 D:\Bitcoin_Wallet\Various_AspNet_Projects\WEBAPI\WEBAPI\obj\Debug\WEBAPI.pdb
+D:\Bitcoin_Wallet\Various_AspNet_Projects\WEBAPI\WEBAPI\obj\Debug\WEBAPI.csprojResolveAssemblyReference.cache
