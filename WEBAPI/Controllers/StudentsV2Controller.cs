@@ -8,9 +8,9 @@ using WEBAPI.Models;
 
 namespace WEBAPI.Controllers
 {
-    public class StudentV2Controller : ApiController
+    public class StudentsV2Controller : ApiController
     {
-             List<StudentV2> students = new List<StudentV2>()
+           static  List<StudentV2> students = new List<StudentV2>()
         {
             new StudentV2() {Id = 1, FirstName = "Jose", LastName = "t"},
             new StudentV2() {Id = 2, FirstName = "Lucho", LastName = "t"},
